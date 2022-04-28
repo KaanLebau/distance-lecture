@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  border: 1px solid black;
+  background-color: aqua;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.left {
+  border: 1px solid black;
+  background-color: bisque;
+  padding: 10px;
+  width: 20%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.middle {
+  border: 1px solid black;
+  background-color: blue;
+  padding: 10px;
+  width: 60%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.right {
+  border: 1px solid black;
+  background-color: darkcyan;
+  padding: 10px;
+  width: 20%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.teacher {
+  border: 1px solid black;
+  border-radius: 15px 50px;
+  background-color: darkviolet;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.course {
+  border: 1px solid black;
+  border-radius: 15px 50px;
+  background-color: chartreuse;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.allproj {
+  border: 1px solid black;
+  background-color: aqua;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.aproj {
+  border: 1px solid black;
+  border-radius: 15px 50px;
+  width: 200px;
+  padding: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.projector {
+  border: 1px solid black;
+  background-color: aliceblue;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.lecture {
+  border: 1px solid black;
+  background-color: coral;
+  border-radius: 15px 50px;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.fukt {
+  border: 1px solid black;
+  border-radius: 15px 50px;
+  background-color: aquamarine;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.temp {
+  border: 1px solid black;
+  border-radius: 15px 50px;
+  background-color: brown;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.luft {
+  border: 1px solid black;
+  border-radius: 15px 50px;
+  background-color: beige;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
