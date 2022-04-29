@@ -1,25 +1,24 @@
 import React from "react";
 import "./App.css";
-import Header from "./container/Header";
-
+import HeaderPresenter from "./presenter/HeaderPresenter";
+/*
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header name={"Kaan Özsan"} />
     </div>
   );
 }
 
 export default App;
+*/
 
-/*
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div class="row">
-          <p>Distance lecture</p>
-        </div>
+        <HeaderPresenter name={"Kaan Özsan"} />
+
         <div class="row">
           <div class="left">
             <p>side left</p>
@@ -113,4 +112,3 @@ function App() {
 }
 
 export default App;
-*/

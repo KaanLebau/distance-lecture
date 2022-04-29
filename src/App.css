@@ -104,11 +104,6 @@
   margin-bottom: 4px;
 }
 
-.head-navigation {
-  display: flex;
-  margin-inline: 20px;
-}
-
 .nav {
   background-image: linear-gradient(
     transparent 0%,
@@ -130,15 +125,4 @@
 .nav:hover {
   background-size: 100% 100%;
   background-position-x: left;
-}
-
-.pos {
-  width: 70%;
-  justify-content: left;
-  display: flex;
-}
-.log {
-  width: 30%;
-  justify-content: right;
-  display: flex;
 }
