@@ -103,3 +103,42 @@
   margin-top: 4px;
   margin-bottom: 4px;
 }
+
+.head-navigation {
+  display: flex;
+  margin-inline: 20px;
+}
+
+.nav {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent 90%,
+    rgb(167, 17, 69) 90%,
+    rgb(167, 17, 69) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+
+  transition: 300ms;
+
+  font-family: "Libre Baskerville", serif;
+  font-family: "PT Serif", serif;
+  margin-inline: 20px;
+}
+
+.nav:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+
+.pos {
+  width: 70%;
+  justify-content: left;
+  display: flex;
+}
+.log {
+  width: 30%;
+  justify-content: right;
+  display: flex;
+}
