@@ -1,11 +1,17 @@
 import React from "react";
 import "./App.css";
+
 import HeaderPresenter from "./presenter/HeaderPresenter";
+import CoursePresenter from "./presenter/CoursePresenter";
+import AirQualityPresenter from "./presenter/AirQualityPresenter";
+import TempPresenter from "./presenter/TempPresenter";
+import HumidityPresenter from "./presenter/HumidtyPresenter";
+
 /*
 function App() {
   return (
     <div className="App">
-      <Header name={"Kaan Özsan"} />
+      <AirQualityInfo />
     </div>
   );
 }
@@ -21,26 +27,8 @@ function App() {
 
         <div class="row">
           <div class="left">
-            <p>side left</p>
-            <div class="teacher">
-              <h1>Teacher info</h1>
-              <img src="" alt="" />
-              <h2>teacher name</h2>
-              <h2>teacher mail</h2>
-              <p>
-                här kommer information om läraren som ska hämtas från database
-                skparen gör ett statisk till och börja med
-              </p>
-            </div>
             <div class="course">
-              <h1>Course info</h1>
-              <h2>Courese name</h2>
-              <h2>Courese number</h2>
-              <h2>module</h2>
-              <p>
-                här kommer information om kursen som ska hämtas från database
-                skaparen gör ett statisk till och börja med
-              </p>
+              <CoursePresenter />
             </div>
           </div>
           <div class="middle">
@@ -69,25 +57,13 @@ function App() {
             </div>
 
             <div class="temp">
-              <h1>Temperature info</h1>
-              <p>
-                här kommer information om temp som ska hämtas från database
-                skaparen gör ett statisk till och börja med
-              </p>
+              <TempPresenter />
             </div>
             <div class="fukt">
-              <h1>fukt info</h1>
-              <p>
-                här kommer information om fukt som ska hämtas från database
-                skaparen gör ett statisk till och börja med
-              </p>
+              <HumidityPresenter />
             </div>
             <div class="luft">
-              <h1>luft kvalite info</h1>
-              <p>
-                här kommer information om luft kvalite som ska hämtas från
-                database skaparen gör ett statisk till och börja med
-              </p>
+              <AirQualityPresenter />
             </div>
           </div>
           <div class="right">

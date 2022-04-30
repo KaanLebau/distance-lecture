@@ -4,7 +4,6 @@ import HeadLocation from "./HeadLocation";
 import Product from "./Product";
 
 const Header = (props) => {
-  let data = props;
   const Header = styled.div`
     background-color: rgb(159, 179, 194);
     justify-content: center;
