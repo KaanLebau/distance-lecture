@@ -1,8 +1,7 @@
-class Lecture {
-  constructor(course, teacher, room, enviroment) {
-    this.course = course;
-    this.teacher = teacher;
-    this.room = room;
-    this.enviroment = enviroment;
-  }
-}
+import { Room } from "./Room";
+
+export const Lecture = {
+  date: "02-05-2022",
+  time: "10:00 - 12:00",
+  place: Room,
+};

@@ -1,15 +1,7 @@
 .App {
   overflow: hidden;
 }
-.temp {
-  margin: 4px;
-}
-.fukt {
-  margin: 4px;
-}
-.luft {
-  margin: 4px;
-}
+
 .proj {
   margin: 4px;
 }
@@ -26,14 +18,12 @@
 }
 .middle {
   overflow: hidden;
-  border: 1px solid black;
   background-color: rgb(159, 179, 194);
   width: 60%;
   margin: 1px;
 }
 .right {
   overflow: hidden;
-  border: 1px solid black;
   background-color: rgb(159, 179, 194);
   width: 20%;
 }
@@ -128,4 +118,26 @@
   margin: 4px;
   padding: 4px;
   color: azure;
+}
+
+.lc {
+  display: flex;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 400px;
+  border-radius: 6px;
+}
+
+.slider::-webkit-slider-thumb {
+  width: 100px;
+  height: 10px;
+  background-color: rgb(27, 59, 111);
+  cursor: pointer;
 }
