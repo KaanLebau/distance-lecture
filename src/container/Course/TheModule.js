@@ -6,17 +6,7 @@ function TheModule(props) {
     padding-top: 8px;
     padding-bottom: 8px;
   `;
-  const Info = styled.div`
-    border: 2px;
-    font-family: "Libre Baskerville", serif;
-    font-family: "PT Serif", serif;
-    justify-content: space-between;
-    display: flex;
-    font-size: medium;
-    margin: 2px;
-    padding: 2px;
-    color: rgb(180, 248, 248);
-  `;
+
   const RowInfo = styled.h2`
     border: 2px;
     font-family: "Libre Baskerville", serif;

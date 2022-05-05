@@ -28,6 +28,7 @@ function Projector(props) {
   return (
     <TheProjector>
       <OnOff>ON</OnOff>
+
       <Info>{props.project.name}</Info>
     </TheProjector>
   );

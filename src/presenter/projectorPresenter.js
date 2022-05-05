@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import ProjectorInfo from "../container/Projector/ProjectorInfo";
-import { Room } from "../model/Room";
+import { Room } from "../model/data/Room";
 
 function ProjectorPresenter(props) {
   const Info = styled.h3`

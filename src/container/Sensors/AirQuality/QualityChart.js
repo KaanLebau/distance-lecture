@@ -3,7 +3,7 @@ import { Line } from "react-chartjs-2";
 
 function LineChart(props) {
   return (
-    <div className="qchart">
+    <div>
       <Line data={props.chartData} options={props.chartScales} />
     </div>
   );

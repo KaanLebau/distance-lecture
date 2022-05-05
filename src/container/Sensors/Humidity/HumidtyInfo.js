@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import Info from "./InfoHumidity";
 import LineChart from "./HumidityChart";
 import { SensorData } from "./DataHumidity";
-import { registerables } from "chart.js";
+import styled from "@emotion/styled";
 
 const HumidityInfo = (props) => {
+  const Box = styled.div`
+    border-radius: 70px 30px 70px 30px;
+    display: flex;
+    background-color: #86003c;
+  `;
   const [userData, setUserData] = useState({
     labels: SensorData.map((data) => data.time),
     datasets: [
@@ -18,12 +23,12 @@ const HumidityInfo = (props) => {
   });
   const options = {};
   return (
-    <div className="AQI">
+    <Box>
       <Info quality={["Humidity", "50%"]} />
-      <div className="graph">
+      <div>
         <LineChart chartData={userData} chartOptions={options} />
       </div>
-    </div>
+    </Box>
   );
 };
 

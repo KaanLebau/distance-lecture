@@ -13,7 +13,7 @@ import ProjectorPresenter from "./presenter/ProjectorPresenter";
 function App() {
   return (
     <div className="App">
-      <AirQualityInfo />
+      <ModelDB />
     </div>
   );
 }
@@ -29,7 +29,7 @@ function App() {
 
         <div class="row">
           <div class="left">
-            <div class="course">
+            <div className="course">
               <CoursePresenter />
             </div>
           </div>

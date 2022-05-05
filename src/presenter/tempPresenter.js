@@ -6,10 +6,11 @@ function tempPresenter(props) {
   const TempBody = styled.div`
     margin: 4px;
   `;
+
   return (
-    <div>
-      <TempInfo room={"Lecture room A"} />
-    </div>
+    <TempBody>
+      <TempInfo />
+    </TempBody>
   );
 }
 

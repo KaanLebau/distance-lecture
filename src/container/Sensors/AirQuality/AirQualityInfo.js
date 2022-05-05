@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import Info from "./InfoQuality";
 import LineChart from "./QualityChart";
 import { SensorData } from "./Dataquality";
+import styled from "@emotion/styled";
 
 const AirQualityInfo = (props) => {
+  const Box = styled.div`
+    border-radius: 70px 30px 70px 30px;
+    display: flex;
+    background-color: #86003c;
+  `;
   const [userData, setUserData] = useState({
     labels: SensorData.map((data) => data.time),
     datasets: [
@@ -17,12 +23,12 @@ const AirQualityInfo = (props) => {
   });
   const options = {};
   return (
-    <div className="AQI">
+    <Box>
       <Info quality={["Air Quality", "25%", "ppm"]} />
-      <div className="graph">
+      <div>
         <LineChart chartData={userData} chartOptions={options} />
       </div>
-    </div>
+    </Box>
   );
 };
 

@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import Info from "./InfoTemperature";
 import LineChart from "./TempChart";
 import { SensorData } from "./Datatemp";
-import { registerables } from "chart.js";
+import styled from "@emotion/styled";
 
 const TempInfo = (props) => {
+  const Box = styled.div`
+    border-radius: 70px 30px 70px 30px;
+    display: flex;
+    background-color: #86003c;
+  `;
+
   const [userData, setUserData] = useState({
     labels: SensorData.map((data) => data.time),
     datasets: [
@@ -18,12 +24,12 @@ const TempInfo = (props) => {
   });
   const options = {};
   return (
-    <div className="AQI">
+    <Box>
       <Info quality={["Temperature", "23", "C"]} />
-      <div className="graph">
+      <div>
         <LineChart chartData={userData} chartOptions={options} />
       </div>
-    </div>
+    </Box>
   );
 };
 

@@ -14,19 +14,19 @@ const module3 = {
   module: 3,
   topic: "Architect",
   description: "Role play character in project",
-  content: "how to take create architecture documentation",
+  content: "how to create architecture documentation",
 };
 const module4 = {
   module: 4,
   topic: "Developer",
   description: "Role play character in project",
-  content: "how to use different patern during development",
+  content: "How to use different patern during development",
 };
 const module5 = {
   module: 5,
   topic: "Tester",
   description: "Role play character in project",
-  content: "which tests are necessary for the product",
+  content: "Which tests are necessary for the product",
 };
 const module6 = {
   module: 6,

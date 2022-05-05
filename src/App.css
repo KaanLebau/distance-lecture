@@ -61,71 +61,12 @@
   margin-bottom: 4px;
 }
 
-.nav {
-  background-image: linear-gradient(
-    transparent 0%,
-    transparent 90%,
-    rgb(167, 17, 69) 90%,
-    rgb(167, 17, 69) 100%
-  );
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  background-position-x: right;
-
-  transition: 300ms;
-
-  font-family: "Libre Baskerville", serif;
-  font-family: "PT Serif", serif;
-  margin-inline: 20px;
-}
-
-.nav:hover {
-  background-size: 100% 100%;
-  background-position-x: left;
-}
-
-.skelet {
-  border: 1px solid black;
-  border-radius: 70px 0px 0px 30px;
-  height: 200px;
-  background-color: #86003c;
-  margin: 5px;
-  justify-content: center;
-  width: 150px;
-}
-
-.qchart {
-  width: 853;
-}
-.AQI {
-  border-radius: 70px 30px 70px 30px;
-  display: flex;
-  background-color: #86003c;
-}
-
 .course {
   border-radius: 15px 50px;
   background-color: rgb(27, 59, 111);
   padding: 10px;
   margin-top: 4px;
   margin-bottom: 4px;
-}
-.cn {
-  background-color: rgb(27, 59, 111);
-  font-family: "Libre Baskerville", serif;
-  font-family: "PT Serif", serif;
-  text-align: center;
-  margin: 4px;
-  padding: 4px;
-  color: azure;
-}
-
-.lc {
-  display: flex;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  justify-content: center;
 }
 
 .slider {

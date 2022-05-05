@@ -37,4 +37,10 @@ export const SensorData = [
     unit: "C",
     time: "15:35",
   },
+  {
+    sensor: "Temprature",
+    mesurement: 55,
+    unit: "C",
+    time: "15:45",
+  },
 ];
