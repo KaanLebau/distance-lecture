@@ -82,3 +82,8 @@
   background-color: rgb(27, 59, 111);
   cursor: pointer;
 }
+
+.plan {
+  background-color: rgb(159, 179, 194);
+  justify-self: center;
+}

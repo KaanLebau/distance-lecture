@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 const Company = () => {
   const Comp = styled.div`
     text-align: center;
+    margin-top: 4px;
   `;
   const ProductName = styled.h2`
     margin: 0 auto;

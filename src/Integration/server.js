@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const pg = require("pg");
-const PORT = 3001;
+const PORT = 5001;
 
 const pool = new pg.Pool({
   user: "postgres",

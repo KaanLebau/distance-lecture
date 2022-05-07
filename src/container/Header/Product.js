@@ -8,7 +8,6 @@ const Product = () => {
     display: flex;
     justify-content: center;
     height: 35px;
-    margin: 3px;
   `;
   return (
     <Banner>

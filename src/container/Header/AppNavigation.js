@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "@emotion/styled";
 
 const AppNavigation = () => {
@@ -33,9 +34,15 @@ const AppNavigation = () => {
 
   return (
     <Navigation>
-      <Nav>Home</Nav>
-      <Nav>Lecture</Nav>
-      <Nav>Planer</Nav>
+      <NavLink to={"/"}>
+        <Nav>Home</Nav>
+      </NavLink>
+      <NavLink to={"/lecture"}>
+        <Nav>Lecture</Nav>
+      </NavLink>
+      <NavLink to={"/planer"}>
+        <Nav>Planer</Nav>
+      </NavLink>
     </Navigation>
   );
 };
