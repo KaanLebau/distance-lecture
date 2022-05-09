@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Info from "./InfoTemperature";
 import LineChart from "./TempChart";
-import { SensorData } from "./Datatemp";
+
 import styled from "@emotion/styled";
 
 const TempInfo = (props) => {
@@ -10,24 +11,34 @@ const TempInfo = (props) => {
     display: flex;
     background-color: #86003c;
   `;
+  const [listOfTemps, setListOfTemps] = useState([]);
 
-  const [userData, setUserData] = useState({
-    labels: SensorData.map((data) => data.time),
+  useEffect(() => {
+    axios.get("http://localhost:3001/temp").then((respons) => {
+      setTimeout(() => {
+        setListOfTemps(respons.data);
+      }, 5000);
+    });
+  });
+
+  const data = {
+    labels: listOfTemps.map((temp) => temp.time),
     datasets: [
       {
-        label: SensorData[0].sensor,
-        data: SensorData.map((data) => data.mesurement),
+        label: "Temperature",
+        data: listOfTemps.map((temp) => temp.mesurement),
         borderColor: " rgb(180, 248, 248)",
         backgroundColor: " rgb(180, 248, 248)",
       },
     ],
-  });
+  };
+
   const options = {};
   return (
     <Box>
-      <Info quality={["Temperature", "23", "C"]} />
+      <Info theTemp={listOfTemps[listOfTemps.length - 1]} />
       <div>
-        <LineChart chartData={userData} chartOptions={options} />
+        <LineChart chartData={data} chartOptions={options} />
       </div>
     </Box>
   );

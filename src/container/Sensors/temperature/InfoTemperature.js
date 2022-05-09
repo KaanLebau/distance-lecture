@@ -29,9 +29,9 @@ const Info = (props) => {
 
   return (
     <SensorData>
-      <Mesured>{props.quality[0]}</Mesured>
+      <Mesured>{props.theTemp.sensor}</Mesured>
       <Value>
-        <b>{props.quality[1]}</b> {props.quality[2]}
+        <b>{props.theTemp.mesurement}</b> {props.theTemp.unit}
       </Value>
     </SensorData>
   );

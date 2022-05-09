@@ -31,9 +31,9 @@ const Info = (props) => {
 
   return (
     <SensorData>
-      <Mesured>{props.quality[0]}</Mesured>
+      <Mesured>{props.theHumid.sensor}</Mesured>
       <Value>
-        {props.quality[1]} {props.quality[2]}
+        <b>{props.theHumid.mesurement}</b> {props.theHumid.unit}
       </Value>
     </SensorData>
   );

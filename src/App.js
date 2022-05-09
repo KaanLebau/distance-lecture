@@ -22,12 +22,9 @@ export default App;
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="app">
-        <HeaderPresenter />
-        <ActiveLecture />
-      </div>
-    </BrowserRouter>
+    <div className="app">
+      <ActiveLecture />
+    </div>
   );
 }
 
