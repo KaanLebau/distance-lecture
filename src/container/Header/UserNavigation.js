@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
+//import {  } from "react-router-dom";
 
 const UserNavigation = (props) => {
   const Navigation = styled.div`
@@ -32,9 +32,7 @@ const UserNavigation = (props) => {
   return (
     <Navigation>
       <Nav>{props.name}</Nav>
-      <NavLink to={"/"}>
-        <Nav>log out</Nav>
-      </NavLink>
+      <Nav>log out</Nav>
     </Navigation>
   );
 };

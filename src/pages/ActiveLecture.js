@@ -16,8 +16,6 @@ function ActiveLecture() {
       </div>
       <div class="middle">
         <ProjectorPresenter />
-        <TempPresenter />
-        <HumidityPresenter />
         <AirQualityPresenter />
       </div>
       <div class="right">

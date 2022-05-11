@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderPresenter from "../presenter/HeaderPresenter";
 
 function Home() {
   return (

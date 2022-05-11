@@ -87,3 +87,21 @@
   background-color: rgb(159, 179, 194);
   justify-self: center;
 }
+
+.links {
+  font-family: "Libre Baskerville", serif;
+  font-family: "PT Serif", serif;
+  text-decoration: none;
+  margin-inline: 20px;
+  border-radius: 10px;
+  align-self: center;
+  text-align: center;
+  margin: 10px;
+  width: 10%;
+}
+
+.links:hover {
+  background-color: rgb(27, 59, 111);
+  color: azure;
+  border: 1px solid azure;
+}

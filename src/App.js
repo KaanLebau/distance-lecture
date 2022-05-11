@@ -1,31 +1,27 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import { Route } from "react-router-dom";
-import { Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home";
+import HeaderPresenter from "./presenter/HeaderPresenter";
 import ActiveLecture from "./pages/ActiveLecture";
 import PlanLecture from "./pages/PlanLecture";
-import HeaderPresenter from "./presenter/HeaderPresenter";
-/*
-function App() {
-  return (
-    <div className="App">
-      <ModelDB />
-    </div>
-  );
-}
-
-export default App;
-*/
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="app">
-      <ActiveLecture />
+      <Router>
+        <HeaderPresenter />
+        <Routes>
+          <Route path="/" exact element={Home} />
+          <Route path="activelecture" element={<ActiveLecture />} />
+          <Route path="lectureplaner" element={<PlanLecture />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
 
 export default App;
+/*
+ */
