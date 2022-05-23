@@ -9,7 +9,10 @@ function tempPresenter(props) {
 
   return (
     <TempBody>
-      <TempInfo />
+      <TempInfo
+        sensorData={props.room.getAllTemperatur()}
+        current={props.room.getLastTemperatur()}
+      />
     </TempBody>
   );
 }

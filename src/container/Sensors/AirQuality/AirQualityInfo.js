@@ -4,12 +4,12 @@ import LineChart from "./QualityChart";
 import { SensorData } from "./Dataquality";
 import styled from "@emotion/styled";
 
+const Box = styled.div`
+  border-radius: 70px 30px 70px 30px;
+  display: flex;
+  background-color: #86003c;
+`;
 const AirQualityInfo = (props) => {
-  const Box = styled.div`
-    border-radius: 70px 30px 70px 30px;
-    display: flex;
-    background-color: #86003c;
-  `;
   const [userData, setUserData] = useState({
     labels: SensorData.map((data) => data.time),
     datasets: [
@@ -24,7 +24,8 @@ const AirQualityInfo = (props) => {
   const options = {};
   return (
     <Box>
-      <Info quality={["Air Quality", "25%", "ppm"]} />
+      {props.airQs[0].sensor}
+      <Info quality={SensorData[SensorData.length - 1]} />
       <div>
         <LineChart chartData={userData} chartOptions={options} />
       </div>

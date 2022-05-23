@@ -3,10 +3,10 @@ import styled from "@emotion/styled";
 import AppNavigation from "./AppNavigation";
 import UserNavigation from "./UserNavigation";
 
+const Navigation = styled.div`
+  display: flex;
+`;
 const HeadLocation = (props) => {
-  const Navigation = styled.div`
-    display: flex;
-  `;
   return (
     <Navigation>
       <AppNavigation />

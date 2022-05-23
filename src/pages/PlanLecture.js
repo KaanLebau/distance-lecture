@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderPresenter from "../presenter/HeaderPresenter";
 import PlanerPresenter from "../presenter/PlanerPresenter";
 
 function PlanLecture() {

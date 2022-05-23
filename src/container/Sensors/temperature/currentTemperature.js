@@ -28,9 +28,9 @@ const Value = styled.div`
 const Info = (props) => {
   return (
     <SensorData>
-      <Mesured>{props.quality.sensor}</Mesured>
+      <Mesured>{props.theTemp.sensor}</Mesured>
       <Value>
-        <b>{props.quality.mesurement}</b> {props.quality.unit}
+        <b>{props.theTemp.mesurement}</b> {props.theTemp.unit}
       </Value>
     </SensorData>
   );

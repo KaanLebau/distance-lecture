@@ -20,7 +20,7 @@ function ProjectorPresenter(props) {
   return (
     <Proj>
       <Info>Available projectors</Info>
-      <ProjectorInfo room={Room} />
+      <ProjectorInfo room={props.room} />
     </Proj>
   );
 }

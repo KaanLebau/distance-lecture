@@ -2,35 +2,37 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const SensorData = styled.div`
+  color: black;
   height: 150px;
-  width: 20%;
-  margin: 0px;
-  padding: 0px;
+  width: 200px;
+  margin: 3px;
 `;
 const Mesured = styled.h2`
   font-family: "Libre Baskerville", serif;
   font-family: "PT Serif", serif;
   text-align: center;
-  text-size: 35px;
   color: azure;
-  margin 2px;
+  border: 4px;
+  margin: 4px;
+  padding: 16px;
 `;
 
-const Value = styled.div`
+const Value = styled.h3`
   font-family: "Libre Baskerville", serif;
   font-family: "PT Serif", serif;
   text-align: center;
   color: azure;
-  font-size: 25px;
+  font-size: 40px;
+  border: 1px;
   margin: 1px;
   padding: 1px;
 `;
 const Info = (props) => {
   return (
     <SensorData>
-      <Mesured>{props.quality.sensor}</Mesured>
+      <Mesured>{props.theHumid.sensor}</Mesured>
       <Value>
-        <b>{props.quality.mesurement}</b> {props.quality.unit}
+        <b>{props.theHumid.mesurement}</b> {props.theHumid.unit}
       </Value>
     </SensorData>
   );

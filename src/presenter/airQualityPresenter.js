@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AirQualityInfo from "../container/Sensors/AirQuality/AirQualityInfo";
 import styled from "@emotion/styled";
 
@@ -9,7 +9,7 @@ function airQualityPresenter(props) {
 
   return (
     <QualityBody>
-      <AirQualityInfo room={"Lecture room A"} />
+      <AirQualityInfo airQs={props.airQs} />
     </QualityBody>
   );
 }

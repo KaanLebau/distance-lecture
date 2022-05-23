@@ -1,44 +1,33 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-import Info from "./InfoHumidity";
+import Current from "./currentHumid";
 import LineChart from "./HumidityChart";
-
+import { SensorData } from "./DataHumidity";
 import styled from "@emotion/styled";
 
+const Box = styled.div`
+  border-radius: 70px 30px 70px 30px;
+  display: flex;
+  background-color: #86003c;
+`;
 const HumidityInfo = (props) => {
-  const Box = styled.div`
-    border-radius: 70px 30px 70px 30px;
-    display: flex;
-    background-color: #86003c;
-  `;
-  const [listOfHumidities, setListOfHumidities] = useState([]);
-
-  useEffect(() => {
-    axios.get("http://localhost:3001/humidity").then((respons) => {
-      setTimeout(() => {
-        setListOfHumidities(respons.data);
-      }, 5000);
-    });
-  });
-
-  const data = {
-    labels: listOfHumidities.map((humid) => humid.time),
+  const [userData, setUserData] = useState({
+    labels: SensorData.map((data) => data.time),
     datasets: [
       {
-        label: "Temperature",
-        data: listOfHumidities.map((humid) => humid.mesurement),
-        borderColor: " rgb(180, 248, 248)",
-        backgroundColor: " rgb(180, 248, 248)",
+        label: SensorData[0].sensor,
+        data: SensorData.map((data) => data.mesurement),
+        borderColor: "rgb(255, 255, 255)",
+        backgroundColor: "rgb(255,255,255)",
       },
     ],
-  };
-
+  });
   const options = {};
+
   return (
     <Box>
-      <Info theHumid={listOfHumidities[listOfHumidities.length - 1]} />
+      <Current theHumid={SensorData[SensorData.length - 1]} />
       <div>
-        <LineChart chartData={data} chartOptions={options} />
+        <LineChart chartData={userData} chartOptions={options} />
       </div>
     </Box>
   );

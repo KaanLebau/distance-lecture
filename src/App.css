@@ -105,3 +105,10 @@
   color: azure;
   border: 1px solid azure;
 }
+
+.klickbox {
+  text-align: right;
+}
+.klick {
+  margin: 5px;
+}
